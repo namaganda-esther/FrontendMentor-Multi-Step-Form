@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    background-color: hsl(217, 100%, 97%);
+    
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 70%;
+    height: 60%;
+}
+
+.sidebar{
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    padding-left: 15px;
+}
+
+.digits{
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(243, 100%, 62%);
+    border-radius: 80%;
+    color: hsl(0, 0%, 100%);
+    width: 30px;
+    padding: 5px;
+}
+
+.text{
+    line-height: 0.1;
+    color: hsl(0, 0%, 100%);
+}
+
+.steps{
+    color: hsl(229, 24%, 87%);
+}
+
+.steps-text{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar-text{
+    line-height: 2;
+}
+
+.sidebar-text h3{
+    color: hsl(213, 96%, 18%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.sidebar-text p{
+    color: hsl(231, 11%, 63%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.form-control {
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+  
+.form-control::placeholder {
+    color: hsl(231, 11%, 63%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.form-label{
+    color: hsl(213, 96%, 18%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* SWITCH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.switch-wrapper {
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    border: 1px solid lightgrey;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    background: hsl(0, 0%, 100%);
+}
+
+.switch-wrapper [type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+    color: hsl(0, 0%, 100%);
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+    background: transparent;
+}
+
+.switch-wrapper
+    [type="radio"]:checked#monthly
+    + label[for="yearly"]
+    ~ .highlighter {
+    transform: none;
+}
+
+.switch-wrapper
+    [type="radio"]:checked#yearly
+    + label[for="monthly"]
+    ~ .highlighter {
+    transform: translateX(100%);
+}
+
+.switch-wrapper label {
+    font-size: 16px;
+    z-index: 1;
+    min-width: 100px;
+    line-height: 32px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: color 0.25s ease-in-out;
+}
+
+.switch-wrapper label:hover {
+    background: hsl(229, 24%, 87%);
+}
+
+.switch-wrapper .highlighter {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    border-radius: 30px;
+    background: hsl(228, 100%, 84%);
+    transition: transform 0.25s ease-in-out;
+}
+
+/* Add card styles */
+.card {
+    background-color: var(--white);
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card img {
+      max-width: 100%;
+      height: auto;
+}
+
+.card .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .info {
+    padding: 20px 0;
+}
+
+.card .price {
+    font-size: 2rem;
+}
+
+.card .price span {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.card .billing-msg {
+    font-size: 0.8rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+.btn{
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+    width: 120px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }

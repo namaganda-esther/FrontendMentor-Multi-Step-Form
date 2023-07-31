@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  
+</head>
+<body>
+
+    <div class="container mt-5 mx-auto h-auto">
+      <div class="row p-3">
+        <div class="col-sm-4 col-md-4 mb-3">
+          <div class="card w-75 sidebar">
+            <div class="card-body">
+              <div class="row mb-5 mt-5 ml-2">
+                <div class="col-sm-6 col-md-2">
+                  <button class="digits"><a class="nav-link active" aria-current="page" href="#">1</a></button>
+                </div>
+                <div class="col-sm-6 col-md-10 text">
+                  <p class="steps">Step 1</p>
+                  <h5 class="steps-text">Your info</h5>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-sm-6 col-md-2">
+                  <button class="digits"><a class="nav-link" aria-current="page" href="#">2</a></button>
+                </div>
+                <div class="col-sm-6 col-md-10 text">
+                  <p class="steps">Step 2</p>
+                  <h5 class="steps-text">Select plan</h5>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-sm-6 col-md-2">
+                  <button class="digits"><a class="nav-link" aria-current="page" href="#">3</a></button>
+                </div>
+                <div class="col-sm-6 col-md-10 text">
+                  <p class="steps">Step 3</p>
+                  <h5 class="steps-text">Add-ons</h5>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-sm-6 col-md-2">
+                  <button class="digits"><a class="nav-link" aria-current="page" href="#">4</a></button>
+                </div>
+                <div class="col-sm-6 col-md-10 text">
+                  <p class="steps">Step 4</p>
+                  <h5 class="steps-text">Summary</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-8 col-md-8 pt-5 pl-5 w-50" id="step-1">
+          <div class="sidebar-text">
+            <h3 class="">Personal info</h3>
+            <p class="">Please provide your name, email address, and phone number.</p>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input class="form-control form-control-lg" type="text" name="name" placeholder="e.g. Stephen King">
+            </div>
+            <div class="mb-3">
+              <label for="emailAddress" class="form-label">Email Address</label>
+              <input class="form-control form-control-lg" type="email" name="emailAddress" placeholder="e.g. stephenking@lorem.com">
+            </div>
+            <div class="mb-3">
+              <label for="PhoneNumber" class="form-label">Phone Number</label>
+              <input class="form-control form-control-lg" type="number" name="PhoneNumber" placeholder="e.g. +1 234 567 890">
+            </div>
+            <button type="submit" class="btn float-end">Next Step</button>
+          </form>
+        </div>
+
+        <div class="col-sm-8 col-md-8 pt-5 pl-5 w-50" id="step-2">
+          <div class="sidebar-text">
+            <h3 class="">Select Your Plan</h3>
+            <p class=""> You have the option of monthly or yearly billing.</p>
+
+            <div class="row mb-5">
+              <div class="col-sm-6 col-md-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <img src="./assets/images/icon-arcade.svg" alt="" srcset="" class="mb-3">
+                          <div class="heading">
+                            <p>Arcade</p>
+                          </div>
+                          <div class="info">
+                            <div class="price monthly">
+                              <div class="amount">
+                                <p>$9/mo</p>
+                              </div>
+                            </div>
+                            <div class="price yearly hide">
+                              <div class="amount">
+                                <p>$90/yr</p>
+                              </div>
+                              <div class="billing-msg">
+                                <p>2 months free</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+      
+              <div class="col-sm-6 col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="./assets/images/icon-advanced.svg" alt="" srcset="" class="mb-3">
+                    <div class="heading">
+                      <p>Advanced</p>
+                    </div>
+                    <div class="info">
+                      <div class="price monthly">
+                        <div class="amount">
+                            <p>$12/mo</p>
+                        </div>
+                      </div>
+                      <div class="price yearly hide">
+                        <div class="amount">
+                          <p>$120/yr</p>
+                        </div>
+                        <div class="billing-msg">
+                          <p>2 months free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+      
+              <div class="col-sm-6 col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="./assets/images/icon-pro.svg" alt="" srcset="" class="mb-3">
+                    <div class="heading">
+                      <p>Pro</p>
+                    </div>
+                    <div class="info">
+                      <div class="price monthly">
+                        <div class="amount">
+                          <p>$15/mo</p>
+                        </div>
+                      </div>
+                      <div class="price yearly hide">
+                        <div class="amount">
+                          <p>$150/yr</p>
+                        </div>
+                        <div class="billing-msg">
+                          <p>2 months free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+              <div class="switch-wrapper text-center">
+                <input id="monthly" type="radio" name="switch" checked>
+                <input id="yearly" type="radio" name="switch">
+                <label for="monthly">Monthly</label>
+                <label for="yearly">Yearly</label>
+                <span class="highlighter"></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-3 col-md-6 mt-5">
+                <li class="nav-item">
+                  <a class="nav-link float-start" href="step-1" id="previous">Go Back</a>
+                </li>
+              </div>
+              <div class="col-sm-3 col-md-6">
+                <button type="submit" class="btn float-end">Next Step</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="attribution pb-3">
+        <p>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Esther Namaganda</a>.
+        </p>
+      </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
